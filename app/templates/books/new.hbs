@@ -1,0 +1,36 @@
+<h3> Create a new book </h3>
+<h4> Enter your book details </h4>
+{{log model}}
+Title:<br>
+{{input value=model.title}}
+<br>
+ISBN:<br>
+{{input value=model.isbn}}
+<br>
+Pages:<br>
+{{input value=model.pages}}
+<br>
+Description:<br>
+{{input value=model.description}}
+
+<h4> Enter your Author details </h4>
+
+First Name:<br>
+{{input value=model.authors.firstObject.firstName}}
+<br>
+Last Name:<br>
+{{input value=model.authors.firstObject.lastName}}
+<br>
+Bio:<br>
+{{input value=bio}}
+<h4> Enter your Publisher Detail </h4>
+Name:<br>
+{{input value=name}}
+<br>
+Organization Name:<br>
+{{input value=organizationName}}
+<br>
+Address:<br>
+{{input value=address}}
+<br><br><br>
+<button {{action 'createBook' model}}>Submit</button>
