@@ -1,3 +1,24 @@
+<p>
+  {{#if custom}}
+      <input type="radio" checked name="more-fields" {{action 'radioSelected' 'Custom' preventDefault=false}}> Custom
+  {{else}}
+      <input type="radio" name="more-fields" {{action 'radioSelected' 'Custom' preventDefault=false}}> Custom
+  {{/if}}
+
+  {{#if active}}
+      <input type="radio" checked name="more-fields" {{action 'radioSelected' 'Active' preventDefault=false}}> Custom
+  {{else}}
+      <input type="radio" name="more-fields" {{action 'radioSelected' 'Active' preventDefault=false}}> Custom
+  {{/if}}
+
+  {{#if archival}}
+      <input type="radio" checked name="more-fields" {{action 'radioSelected' 'Active' preventDefault=false}}> Custom
+  {{else}}
+      <input type="radio" name="more-fields" {{action 'radioSelected' 'Active' preventDefault=false}}> Custom
+  {{/if}}
+</p>
+
+
 <h3> Create a new book </h3>
 <h4> Enter your book details </h4>
 {{log model}}
