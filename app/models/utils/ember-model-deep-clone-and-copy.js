@@ -79,4 +79,4 @@ var EmberModelDeepCloneAndCopy = Em.Object.extend({
   }
 });
 
-export default EmberModelDeepCloneAndCopy
+export default EmberModelDeepCloneAndCopy;

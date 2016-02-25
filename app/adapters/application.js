@@ -11,4 +11,3 @@ export default DS.RESTAdapter.extend({
     return !aModel.record.get("isNew");
   }
 });
-
