@@ -8,6 +8,11 @@ export default Ember.Route.extend({
   },
 
   actions: {
+    radioSelected: function (selectedValue)
+    {
+      console.log(selectedValue);
+    },
+
     createBook: function (formModel)
     {
       formModel.copyToRecord(this.store);

@@ -52,7 +52,7 @@ var EmberModelDeepCloneAndCopy = Em.Object.extend({
 
   copyToRecord(store) {
     var aRecord = this.get("record");
-    if (aRecord === undefined || aRecord===null)
+    if (aRecord === undefined || aRecord === null)
     {
       aRecord = store.createRecord(this.get("model.modelName"));
       this.set('record', aRecord);
